@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrencies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Top 10 Cryptocurrencies by Market Cap</h1>
+    </header>
+
+    <main>
+        <ol>
+            <a href="/bitcoin"><li> <%= cryptoResponse.data[0].name %> </li></a>
+            <a href="/ethereum"><li> <%= cryptoResponse.data[1].name %> </li></a>
+            <a href="/tether"><li> <%= cryptoResponse.data[2].name %> </li></a>
+            <a href="/bnb"><li> <%= cryptoResponse.data[3].name %> </li></a>
+            <a href="/solana"><li> <%= cryptoResponse.data[4].name %> </li></a>
+            <a href="/usdc"><li> <%= cryptoResponse.data[5].name %> </li></a>
+            <a href="/xrp"><li> <%= cryptoResponse.data[6].name %> </li></a>
+            <a href="/dogecoin"><li> <%= cryptoResponse.data[7].name %> </li></a>
+            <a href="/tron"><li> <%= cryptoResponse.data[8].name %> </li></a>
+            <a href="/toncoin"><li> <%= cryptoResponse.data[9].name %> </li></a>
+        </ol>
+    </main>
+</body>
+</html>

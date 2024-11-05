@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana</title>
+    <link rel="stylesheet" href="solana.css">
+</head>
+<body>
+    <header>
+        <h1> <%= cryptoResponse.data[4].name %> </h1>
+    </header>
+
+    <main>
+        <ul>
+            <li> Symbol: <%= cryptoResponse.data[4].symbol %> </li>
+            <li> Price: $<%= cryptoResponse.data[4].quote.USD.price.toLocaleString() %> </li>
+            <li> Market Cap: $<%= cryptoResponse.data[4].quote.USD.market_cap.toLocaleString() %> </li>
+            <li> Volume: $<%= cryptoResponse.data[4].quote.USD.volume_24h.toLocaleString() %> </li>
+            <li> Circulating Supply: <%= cryptoResponse.data[4].circulating_supply.toLocaleString() %> <%= cryptoResponse.data[4].symbol %> </li>
+        </ul>
+    </main>
+</body>
+</html>

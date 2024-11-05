@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNB</title>
+    <link rel="stylesheet" href="bnb.css">
+</head>
+<body>
+    <header>
+        <h1> <%= cryptoResponse.data[3].name %> </h1>
+    </header>
+
+    <main>
+        <ul>
+            <li> Symbol: <%= cryptoResponse.data[3].symbol %> </li>
+            <li> Price: $<%= cryptoResponse.data[3].quote.USD.price.toLocaleString() %> </li>
+            <li> Market Cap: $<%= cryptoResponse.data[3].quote.USD.market_cap.toLocaleString() %> </li>
+            <li> Volume: $<%= cryptoResponse.data[3].quote.USD.volume_24h.toLocaleString() %> </li>
+            <li> Circulating Supply: <%= cryptoResponse.data[3].circulating_supply.toLocaleString() %> <%= cryptoResponse.data[3].symbol %> </li>
+        </ul>
+    </main>
+</body>
+</html>
