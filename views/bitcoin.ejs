@@ -16,7 +16,7 @@
             <li> Symbol: <%= cryptoResponse.data[0].symbol %> </li>
             <li> Price: $<%= cryptoResponse.data[0].quote.USD.price.toLocaleString() %> </li>
             <li> Market Cap: $<%= cryptoResponse.data[0].quote.USD.market_cap.toLocaleString() %> </li>
-            <li> Volume: $<%= cryptoResponse.data[0].quote.USD.volume_24h.toLocaleString() %> </li>
+            <li> Volume(24h): $<%= cryptoResponse.data[0].quote.USD.volume_24h.toLocaleString() %> </li>
             <li> Circulating Supply: <%= cryptoResponse.data[0].circulating_supply.toLocaleString() %> <%= cryptoResponse.data[0].symbol %> </li>
         </ul>
     </main>
