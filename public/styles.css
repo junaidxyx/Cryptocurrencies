@@ -28,7 +28,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    overflow: hidden;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 /* Header styles */
@@ -57,6 +57,8 @@ main {
     border-radius: var(--border-radius);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     animation: scaleUp 1s ease forwards;
+    margin-bottom: 20px; /* Add some space at the bottom for scrolling */
+    overflow: hidden; /* Keep content confined to main's area */
 }
 
 /* Ordered list styles */
