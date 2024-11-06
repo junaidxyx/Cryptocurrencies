@@ -20,7 +20,7 @@ app.get("/", async (req, res) => {
     res.render("index.ejs", { cryptoResponse: response.data });
 })
 
-app.get("/bitcoin", async (req, res) => {
+app.get("/1", async (req, res) => {
     const response = await axios.get(API_URL + "/v1/cryptocurrency/listings/latest", {
         headers: {
             'X-CMC_PRO_API_KEY': process.env.API_KEY,
@@ -30,7 +30,7 @@ app.get("/bitcoin", async (req, res) => {
     res.render("bitcoin.ejs", { cryptoResponse: response.data });
 })
 
-app.get("/ethereum", async (req, res) => {
+app.get("/2", async (req, res) => {
     const response = await axios.get(API_URL + "/v1/cryptocurrency/listings/latest", {
         headers: {
             'X-CMC_PRO_API_KEY': process.env.API_KEY,
@@ -40,7 +40,7 @@ app.get("/ethereum", async (req, res) => {
     res.render("ethereum.ejs", { cryptoResponse: response.data });
 })
 
-app.get("/tether", async (req, res) => {
+app.get("/3", async (req, res) => {
     const response = await axios.get(API_URL + "/v1/cryptocurrency/listings/latest", {
         headers: {
             'X-CMC_PRO_API_KEY': process.env.API_KEY,
@@ -50,7 +50,7 @@ app.get("/tether", async (req, res) => {
     res.render("tether.ejs", { cryptoResponse: response.data });
 })
 
-app.get("/bnb", async (req, res) => {
+app.get("/4", async (req, res) => {
     const response = await axios.get(API_URL + "/v1/cryptocurrency/listings/latest", {
         headers: {
             'X-CMC_PRO_API_KEY': process.env.API_KEY,
@@ -60,7 +60,7 @@ app.get("/bnb", async (req, res) => {
     res.render("bnb.ejs", { cryptoResponse: response.data });
 })
 
-app.get("/solana", async (req, res) => {
+app.get("/5", async (req, res) => {
     const response = await axios.get(API_URL + "/v1/cryptocurrency/listings/latest", {
         headers: {
             'X-CMC_PRO_API_KEY': process.env.API_KEY,
@@ -70,7 +70,7 @@ app.get("/solana", async (req, res) => {
     res.render("solana.ejs", { cryptoResponse: response.data });
 })
 
-app.get("/usdc", async (req, res) => {
+app.get("/6", async (req, res) => {
     const response = await axios.get(API_URL + "/v1/cryptocurrency/listings/latest", {
         headers: {
             'X-CMC_PRO_API_KEY': process.env.API_KEY,
@@ -80,7 +80,7 @@ app.get("/usdc", async (req, res) => {
     res.render("usdc.ejs", { cryptoResponse: response.data });
 })
 
-app.get("/xrp", async (req, res) => {
+app.get("/7", async (req, res) => {
     const response = await axios.get(API_URL + "/v1/cryptocurrency/listings/latest", {
         headers: {
             'X-CMC_PRO_API_KEY': process.env.API_KEY,
@@ -90,7 +90,7 @@ app.get("/xrp", async (req, res) => {
     res.render("xrp.ejs", { cryptoResponse: response.data });
 })
 
-app.get("/dogecoin", async (req, res) => {
+app.get("/8", async (req, res) => {
     const response = await axios.get(API_URL + "/v1/cryptocurrency/listings/latest", {
         headers: {
             'X-CMC_PRO_API_KEY': process.env.API_KEY,
@@ -100,7 +100,7 @@ app.get("/dogecoin", async (req, res) => {
     res.render("dogecoin.ejs", { cryptoResponse: response.data });
 })
 
-app.get("/tron", async (req, res) => {
+app.get("/9", async (req, res) => {
     const response = await axios.get(API_URL + "/v1/cryptocurrency/listings/latest", {
         headers: {
             'X-CMC_PRO_API_KEY': process.env.API_KEY,
@@ -110,7 +110,7 @@ app.get("/tron", async (req, res) => {
     res.render("tron.ejs", { cryptoResponse: response.data });
 })
 
-app.get("/toncoin", async (req, res) => {
+app.get("/10", async (req, res) => {
     const response = await axios.get(API_URL + "/v1/cryptocurrency/listings/latest", {
         headers: {
             'X-CMC_PRO_API_KEY': process.env.API_KEY,
